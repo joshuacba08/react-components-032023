@@ -1,0 +1,12 @@
+.button{
+    border: none;
+    background: none;
+    padding: 12px 24px;
+    border-radius: 24px;
+    background-color: rgb(119, 17, 215);
+    cursor: pointer;
+}
+
+.button:disabled{
+    background-color: rgb(159, 159, 159);
+}
