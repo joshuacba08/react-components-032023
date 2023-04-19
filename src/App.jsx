@@ -2,12 +2,33 @@ import Button from "./components/Button/Button";
 import Card from "./components/Card/Card";
 import "./App.css";
 import Count from "./components/Count/Count";
+import Chip from "./components/Chip/Chip";
 
 function App() {
+  const requirements = [
+    "html",
+    "css",
+    "javascript",
+    "react js",
+    "sass",
+    "algoritmos",
+    "API",
+    "promises",
+    "bbdd",
+  ];
+
   return (
     <div className="app-container">
       <h1>Material components</h1>
 
+      <section className="section">
+        <h2>Chips</h2>
+        <div className="chips-container">
+          {requirements.map((elemtent,index) => (
+            <Chip title={elemtent} key={index}/>
+          ))}
+        </div>
+      </section>
 
       <section className="section">
         <h2>Contador</h2>

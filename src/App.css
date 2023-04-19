@@ -4,3 +4,10 @@
 .section{
     margin: 60px 0;
 }
+
+
+.chips-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
